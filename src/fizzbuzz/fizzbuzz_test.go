@@ -11,3 +11,11 @@ func TestFizz(t *testing.T){
 		t.Error("FB Fail. Expected:" + expected + " Actual :" + actual)
 	}
 }
+
+func TestBuzz(t *testing.T){
+	var expected = "12Fizz4Buzz"
+	var actual = FizzBuzz(5)
+	if actual != expected{
+		t.Error("FB Fail. Expected:" + expected + " Actual :" + actual)
+	}
+}

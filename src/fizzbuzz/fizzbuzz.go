@@ -9,7 +9,9 @@ func FizzBuzz(num int) string{
 	for i :=1; i < num+1; i ++ {
 		if i%3 == 0 {
 			name += "Fizz"
-		}else{
+		} else if i%5 == 0 {
+			name += "Buzz"
+		} else{
 			name += strconv.Itoa(i)
 		}
 	}
