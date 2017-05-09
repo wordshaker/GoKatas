@@ -19,7 +19,7 @@ func Build(max int, breakingFloor int) []bool{
 		for i := breakingFloor; i < len(building); i ++ {
 			building[i] = true
 		}
-		for y := breakingFloor; y > 0 ; y -- {
+		for y := breakingFloor-1; y > 0 ; y -- {
 			building[y] = false
 		}
 	return building
